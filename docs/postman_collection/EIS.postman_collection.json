@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "3133c239-8c76-4512-b1ad-5ee2ba193dce",
+		"name": "EIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "783238"
+	},
+	"item": [
+		{
+			"name": "Staff Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"pathareshraddha2001@gmail.com\",\n    \"password\":\"Test@123\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9001/eis/login/staff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"eis",
+						"login",
+						"staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all staff",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9001/eis/staff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"eis",
+						"staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get staff",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9001/eis/staff/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"eis",
+						"staff",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add staff",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Shraddha Pathare\",\n    \"email\":\"pathareshraddha2001@gmail.com\",\n    \"password\":\"Test@123\",\n    \"mobile\":\"+919657843801\",\n    \"designation\":\"HOD\",\n    \"role\":\"Super Admin\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9001/eis/staff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"eis",
+						"staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update staff",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"name\":\"Mrs. Shraddha Pathare\",\n    \"mobile\":\"+919657843801\",\n    \"designation\":\"HOD\",\n    \"role\":\"Super Admin\",\n    \"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9001/eis/staff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"eis",
+						"staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete staff",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9001/eis/staff/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"eis",
+						"staff",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
